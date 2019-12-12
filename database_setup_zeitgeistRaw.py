@@ -53,7 +53,7 @@ CREATE TABLE testQuestions ( question_id TEXT,
                      category );
 
 # Connecting to typeform API to get the Data Science Skill survey results
-token = '991oQBYCvP2ivcvDv4iaPjp1s2T71QgMxukLDLdYidqV'
+token = 'xxxxxxxxx' #substitutewith token
 
 headers = {
     'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ headers = {
 
 formsResponse = requests.request(
     'GET',
-    'https://api.typeform.com/forms/rN2Rrv/responses',
+    'https://api.typeform.com/forms/xxxxx/responses', #substitute xxxxx with formid
     data='',
     headers=headers
 )
